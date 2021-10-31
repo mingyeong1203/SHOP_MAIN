@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>mingong🎀's shop🛍️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: 'Yeon Sung', cursive;
+        }
+        .wrap {
+            width: 600px;
+            margin: auto;
+        }
+        .product_image {
+            width: 600px;
+            height: 400px;
+
+            background-image:url("https://shopping-phinf.pstatic.net/main_2907774/29077746429.20211003004138.jpg?type=f640");
+            background-size: cover;
+            background-position: center;
+        }
+        .product_name {
+            display:inline-block;
+            margin : 20px 0px 10px 0px
+        }
+        .product_price {
+            display: inline-block;
+        }
+        .input-group {
+            margin : 20px 0px 20px 0px;
+        }
+        .btn-primary {
+            width: 80px;
+            margin : auto;
+            display : block;
+        }
+    </style>
+    <script>
+        function order() {
+            alert('주문이 완료되었습니다!🌝');
+        }
+    </script>
+</head>
+
+<body>
+    <div class = 'wrap'>
+        <div class = 'product_image'></div>
+
+        <span><h3 class = 'product_name'>카카오프렌즈 춘식이 2022 스프링 다이어리</h3></span>
+        <span><h6 class = 'product_price'>가격 : 12,700원/개</h6></span>
+
+        <p> 이렇게 귀여운 다이어리 본 적 있냐..? 새해에도 춘식이와 함께해! 🧸 <br>
+            춘식이 다이어리 데코 스티커를 활용해 다이어리를 꾸며보세요! 귀여움이 두배! </p>
+
+        <p> ❗ 본 제품은 주식회사 카카오와 라이선스 정식계약에 의해 <br>
+            (주)아이콘스에서 제작 판매하는 것으로 무단 복제 및 판매를 금합니다. </p>
+
+        <div class = 'input_group'>
+            <div class="input-group name">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">주문자 이름</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group amount">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">수량</label>
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected>--수량을 선택하세요--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+            <div class="input-group address">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">주소</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group number">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+        </div>
+
+        <a onclick="order()" class="btn btn-primary" href="#" role="button">주문하기</a>
+
+    </div>
+</body>
+
+</html>
