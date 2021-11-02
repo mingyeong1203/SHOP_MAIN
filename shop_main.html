@@ -54,8 +54,28 @@
             margin : auto;
             display : block;
         }
+        .rate {
+            color: blue;
+        }
     </style>
+
     <script>
+        $(document).ready(function () {
+            get_rate();
+        });
+
+         function get_rate(){
+            $.ajax({
+                type: "GET",
+                url: "http://spartacodingclub.shop/sparta_api/rate",
+                data: {},
+                success: function (response) {
+                    let now_rate = response['rate'];
+                    $('#now-rate').text(now_rate);
+                }
+            })
+        }
+
         function order() {
             alert('주문이 완료되었습니다!🌝');
         }
@@ -74,6 +94,8 @@
 
         <p> ❗ 본 제품은 주식회사 카카오와 라이선스 정식계약에 의해 <br>
             (주)아이콘스에서 제작 판매하는 것으로 무단 복제 및 판매를 금합니다. </p>
+
+        <p class = "rate">달러-원 환율 : <span id="now-rate">1219.15</span></p>
 
         <div class = 'input_group'>
             <div class="input-group name">
